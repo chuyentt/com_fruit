@@ -70,6 +70,14 @@
 		description="JFIELD_ACCESS_DESC"
 	/>
         
+        <field name="version_note"
+		type="text"
+		label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+		description="JGLOBAL_FIELD_VERSION_NOTE_DESC"
+		class="span12" size="45"
+		labelclass="control-label"
+	/>
+        
         <field name="checked_out" type="hidden" filter="unset" />
         <field name="checked_out_time" type="hidden" filter="unset" /> 
 

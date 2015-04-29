@@ -24,6 +24,7 @@ class FruitTableorange extends JTable
 	public function __construct(&$db)
 	{
 		parent::__construct('#__fruit_oranges', 'id', $db);
+                JTableObserverContenthistory::createObserver($this, array('typeAlias' => 'com_fruit.orange'));
 	}
 
 	/**

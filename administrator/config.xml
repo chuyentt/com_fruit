@@ -2,6 +2,17 @@
 <config>
     <fieldset label="COM_FRUIT" name="fruit">
         
+        <field
+            name="save_history"
+            type="radio"
+            class="btn-group btn-group-yesno"
+            default="0"
+            label="JGLOBAL_SAVE_HISTORY_OPTIONS_LABEL"
+            description="JGLOBAL_SAVE_HISTORY_OPTIONS_DESC"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
     </fieldset>
     <fieldset 
         name="permissions"

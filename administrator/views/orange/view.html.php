@@ -71,6 +71,9 @@ class FruitViewOrange extends JViewLegacy {
         if (empty($this->item->id)) {
             JToolBarHelper::cancel('orange.cancel', 'JTOOLBAR_CANCEL');
         } else {
+            if ($this->state->params->get('save_history', 0) && $user->authorise('core.edit')) {
+                JToolbarHelper::versions('com_fruit.orange', $this->item->id);
+            }
             JToolBarHelper::cancel('orange.cancel', 'JTOOLBAR_CLOSE');
         }
     }

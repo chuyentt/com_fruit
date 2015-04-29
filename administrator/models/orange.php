@@ -22,6 +22,7 @@ class FruitModelOrange extends JModelAdmin
 	 * @since	1.6
 	 */
 	protected $text_prefix = 'COM_FRUIT';
+	public $typeAlias = 'com_fruit.orange';
 
 
 	/**
